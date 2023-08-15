@@ -9,6 +9,9 @@ import UIKit
 import SnapKit
 
 final class FeatureSectionView : UIView {
+    
+    private var featureList : [Feature] = []
+    
     private lazy var collectionView : UICollectionView = {
        let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -31,6 +34,8 @@ final class FeatureSectionView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        fetchData()
+        collectionView.reloadData()
     }
     
     required init?(coder: NSCoder) {
@@ -42,13 +47,15 @@ final class FeatureSectionView : UIView {
 extension FeatureSectionView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        featureList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureSectionCollectionViewCell", for: indexPath) as? FeatureSectionCollectionViewCell else { return UICollectionViewCell()}
         
-        cell.setup()
+        let feature = featureList[indexPath.item]
+        
+        cell.setup(feature: feature)
         
         return cell
     }
@@ -87,5 +94,15 @@ private extension FeatureSectionView {
             $0.top.equalTo(collectionView.snp.bottom).offset(16.0)
             $0.bottom.equalToSuperview()
         }
+    }
+    
+    func fetchData() {
+        guard let url = Bundle.main.url(forResource: "Feature", withExtension: "plist") else {return}
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let result = try PropertyListDecoder().decode([Feature].self, from: data)
+            featureList = result
+        } catch {}
     }
 }

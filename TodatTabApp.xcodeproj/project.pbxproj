@@ -24,6 +24,13 @@
 		4E7F517C2A8A778500912D80 /* RankingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F517B2A8A778400912D80 /* RankingFeatureSectionView.swift */; };
 		4E7F517E2A8A7D1B00912D80 /* RankingFeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F517D2A8A7D1B00912D80 /* RankingFeatureCollectionViewCell.swift */; };
 		4E7F51802A8A811400912D80 /* ExchangeCodeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F517F2A8A811400912D80 /* ExchangeCodeButtonView.swift */; };
+		4E7F51822A8B6F0700912D80 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F51812A8B6F0700912D80 /* AppDetailViewController.swift */; };
+		4E7F518E2A8BB3D100912D80 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F518D2A8BB3D100912D80 /* Today.swift */; };
+		4E7F51902A8BB45000912D80 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F518F2A8BB45000912D80 /* Feature.swift */; };
+		4E7F51922A8BB49300912D80 /* RankingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F51912A8BB49300912D80 /* RankingFeature.swift */; };
+		4E7F51992A8BBD2F00912D80 /* RankingFeature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F51962A8BBD2F00912D80 /* RankingFeature.plist */; };
+		4E7F519A2A8BBD2F00912D80 /* Today.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F51972A8BBD2F00912D80 /* Today.plist */; };
+		4E7F519B2A8BBD2F00912D80 /* Feature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F51982A8BBD2F00912D80 /* Feature.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,13 @@
 		4E7F517B2A8A778400912D80 /* RankingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionView.swift; sourceTree = "<group>"; };
 		4E7F517D2A8A7D1B00912D80 /* RankingFeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureCollectionViewCell.swift; sourceTree = "<group>"; };
 		4E7F517F2A8A811400912D80 /* ExchangeCodeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCodeButtonView.swift; sourceTree = "<group>"; };
+		4E7F51812A8B6F0700912D80 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		4E7F518D2A8BB3D100912D80 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		4E7F518F2A8BB45000912D80 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		4E7F51912A8BB49300912D80 /* RankingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeature.swift; sourceTree = "<group>"; };
+		4E7F51962A8BBD2F00912D80 /* RankingFeature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RankingFeature.plist; sourceTree = "<group>"; };
+		4E7F51972A8BBD2F00912D80 /* Today.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Today.plist; sourceTree = "<group>"; };
+		4E7F51982A8BBD2F00912D80 /* Feature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Feature.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 		4E7F514F2A890EBE00912D80 /* TodatTabApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E7F519C2A8BBD7E00912D80 /* Data */,
 				4E7F51502A890EBE00912D80 /* AppDelegate.swift */,
 				4E7F51522A890EBE00912D80 /* SceneDelegate.swift */,
 				4E7F51672A89169600912D80 /* Scenes */,
@@ -94,6 +109,10 @@
 				4E7F51722A8A648A00912D80 /* App */,
 				4E7F51682A8916B200912D80 /* Today */,
 				4E7F51542A890EBE00912D80 /* TabBarController.swift */,
+				4E7F51812A8B6F0700912D80 /* AppDetailViewController.swift */,
+				4E7F518D2A8BB3D100912D80 /* Today.swift */,
+				4E7F518F2A8BB45000912D80 /* Feature.swift */,
+				4E7F51912A8BB49300912D80 /* RankingFeature.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -120,6 +139,17 @@
 				4E7F517F2A8A811400912D80 /* ExchangeCodeButtonView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		4E7F519C2A8BBD7E00912D80 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E7F51982A8BBD2F00912D80 /* Feature.plist */,
+				4E7F51962A8BBD2F00912D80 /* RankingFeature.plist */,
+				4E7F51972A8BBD2F00912D80 /* Today.plist */,
+			);
+			name = Data;
+			path = ../Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +218,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7F51992A8BBD2F00912D80 /* RankingFeature.plist in Resources */,
 				4E7F515D2A890EC000912D80 /* LaunchScreen.storyboard in Resources */,
+				4E7F519B2A8BBD2F00912D80 /* Feature.plist in Resources */,
+				4E7F519A2A8BBD2F00912D80 /* Today.plist in Resources */,
 				4E7F515A2A890EC000912D80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,8 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E7F516A2A8916D200912D80 /* TodayViewController.swift in Sources */,
+				4E7F518E2A8BB3D100912D80 /* Today.swift in Sources */,
 				4E7F51552A890EBE00912D80 /* TabBarController.swift in Sources */,
 				4E7F51802A8A811400912D80 /* ExchangeCodeButtonView.swift in Sources */,
+				4E7F51922A8BB49300912D80 /* RankingFeature.swift in Sources */,
+				4E7F51902A8BB45000912D80 /* Feature.swift in Sources */,
 				4E7F51512A890EBE00912D80 /* AppDelegate.swift in Sources */,
 				4E7F51712A89216200912D80 /* TodayCollectionHeaderView.swift in Sources */,
 				4E7F51742A8A649E00912D80 /* AppViewController.swift in Sources */,
@@ -211,6 +247,7 @@
 				4E7F51532A890EBE00912D80 /* SceneDelegate.swift in Sources */,
 				4E7F516F2A891BA600912D80 /* TodayCollectionViewCell.swift in Sources */,
 				4E7F51762A8A6A3900912D80 /* FeatureSectionView.swift in Sources */,
+				4E7F51822A8B6F0700912D80 /* AppDetailViewController.swift in Sources */,
 				4E7F517E2A8A7D1B00912D80 /* RankingFeatureCollectionViewCell.swift in Sources */,
 				4E7F517C2A8A778500912D80 /* RankingFeatureSectionView.swift in Sources */,
 			);
